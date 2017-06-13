@@ -23,6 +23,7 @@ export default class MeasureTool {
     this._options = {
       showSegmentLength: true,
       showAccumulativeLength: true,
+      defaultCursor: 'default',
       contextMenu: true,
       tooltip: true,
       unit: UnitTypeId.METRIC
@@ -112,7 +113,7 @@ export default class MeasureTool {
     this._geometry = new Geometry();
     this._onRemoveOverlay();
     this._setOverlay();
-    this._map.setOptions({draggableCursor: null});
+    this._map.setOptions({draggableCursor: this._options.defaultCursor});
     this._started = false;
 
     if (typeof this._events.get(EVENT_END) === "function") {

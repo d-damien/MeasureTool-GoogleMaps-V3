@@ -75,6 +75,7 @@ var measureTool = new MeasureTool(map, {
 |Properties|Description|
 |----------|-----------|
 |**showSegmentLength**|Type: `boolean` - display segment length along the path. Enabled by default.|
+|**defaultCursor**|Type: `string` - cursor to return to after clearing measurement. [Accepted values](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor).|
 |**tooltip**|Type: `boolean` - display tooltip when hover the drawing path. Enabled by default.|
 |**unit**|Type: `UnitTypeId` - the unit type to use for the measured length and area. Defaults to `MeasureTool.UnitTypeId.METRIC`.|
 
